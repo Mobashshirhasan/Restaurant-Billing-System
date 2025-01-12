@@ -1,7 +1,7 @@
 # Restaurant-Billing-System
 A Flask-based web application for managing restaurant orders and generating PDF invoices for Indian street food and cuisine items.
 
-#Features
+<h3>Features</h3>
 
 Simple and intuitive web interface for order management
 Real-time order tracking
@@ -9,7 +9,7 @@ Automated PDF invoice generation
 Pre-configured menu with popular Indian dishes
 Payment processing with change calculation
 
-Menu Items
+<h3>Menu Items</h3>
 The system includes the following items with their respective prices:
 
 Samosa: $10
