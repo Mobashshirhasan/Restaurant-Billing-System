@@ -3,7 +3,7 @@ A Flask-based web application for managing restaurant orders and generating PDF 
 
 <h3>Features</h3>
 
-Simple and intuitive web interface for order management \n
+Simple and intuitive web interface for order management /n
 Real-time order tracking \n
 Automated PDF invoice generation
 Pre-configured menu with popular Indian dishes
