@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Order</h1>
+        <form action="/add_item" method="post">
+            <label for="item">Item:</label>
+            <select name="item" id="item">
+                {% for item, price in prices.items() %}
+                <option value="{{ item }}">{{ item }} - ${{ price }} </option>
+                {% endfor %}
+            </select><br>
+            <label for="quantity">Quantity :</label>
+            <input type="number" name="quantity" step="0.01" required><br>
+            <button type="submit">Add Item</button>
+        </form>
+        <form action="/generate_invoice" method="post">
+            <label for="payment">Payment ($):</label>
+            <input type="number" name="payment" step="0.01" required><br>
+            <button type="submit">Generate Invoice</button>
+        </form>
+
+        <!-- Order summary will be displayed here -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul>
+                {% for item, quantity in items.items() %}
+                <li>{{ item }} - Quantity: {{ quantity }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
