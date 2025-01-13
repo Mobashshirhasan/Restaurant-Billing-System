@@ -59,7 +59,7 @@ prices = {
     "pakora": 35
 }
 
-# Create an instance of the Order class
+#Create an instance of the Order class
 order = Order()
 
 @app.route('/')
