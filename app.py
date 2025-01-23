@@ -36,7 +36,7 @@ class Order:
         c.drawString(100, y, f"Payment: ${payment}")
         y -= 20
         c.drawString(100, y, f"Change: ${change}")
-        y -= 40  # Adding extra space before the thank you message
+        y -= 40  #  Adding extra space before the thank you message
 
         c.drawString(100, y, "Thank You For Shopping, Please visit again!")
 
