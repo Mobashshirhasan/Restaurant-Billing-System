@@ -45,7 +45,7 @@ class Order:
         buffer.seek(0)
         return buffer
 
-# Prices of items in dollars
+ # Prices of items in dollars
 prices = {
     "samosa": 10,
     "vada pav": 10,
