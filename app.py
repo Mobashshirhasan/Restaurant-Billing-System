@@ -25,7 +25,7 @@ class Order:
         
         y = height - 90
         for item, quantity in self.items.items():
-            cost = quantity * prices.get(item, 0)   # Use get() with default value of 0
+            cost = quantity * prices.get(item, 0)    # Use get() with default value of 0
             c.drawString(100, y, f"{item}: {quantity} x ${prices.get(item, 'N/A')} = ${cost}")
             y -= 20
         
