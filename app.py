@@ -1,7 +1,8 @@
 from flask import Flask, request, render_template, send_file
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-from io import BytesIO 
+from io import BytesIO  s
+
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -94,3 +95,4 @@ def generate_invoice():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
